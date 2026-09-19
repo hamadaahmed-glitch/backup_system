@@ -1,0 +1,104 @@
+# =====================================================================
+# Byte-compiled / optimized / DLL files
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =====================================================================
+# Virtual Environments
+# =====================================================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =====================================================================
+# Backup Storage Data & Payloads (NEVER COMMIT BACKUP DATA)
+# =====================================================================
+# Ignore actual backup content trees and partial transfers
+storage/*/*/
+storage/**/*.partial/
+storage/**/.rsync-partial/
+
+# Preserve storage template and documentation files
+!storage/.gitkeep
+!storage/README.md
+!storage/*/metadata/*.json
+
+# SQLite catalog databases (runtime generated)
+storage/*.db
+storage/*.db-journal
+storage/*.db-wal
+storage/*.db-shm
+
+# Ephemeral mutual-exclusion lock files
+*.lock
+.backup.lock
+
+# =====================================================================
+# Cryptographic Keys & Secrets (CRITICAL SECURITY)
+# =====================================================================
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+id_ed25519_backup
+id_ed25519_backup.pub
+known_hosts
+authorized_keys
+
+# =====================================================================
+# Application Logs
+# =====================================================================
+logs/client/*.log
+logs/desktop/*.log
+*.log
+
+# =====================================================================
+# Testing & Coverage
+# =====================================================================
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# =====================================================================
+# Editor & OS Files
+# =====================================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

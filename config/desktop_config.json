@@ -1,0 +1,12 @@
+{
+  "storage_root": "/srv/backups",
+  "db_path": "/srv/backups/backup_catalog.db",
+  "default_retention": {
+    "keep_last": 5,
+    "max_days": 30
+  },
+  "integrity_audit": {
+    "sample_files_count": 25,
+    "block_size_bytes": 65536
+  }
+}

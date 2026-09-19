@@ -1,0 +1,44 @@
+{
+  "profiles": {
+    "home_directory": {
+      "description": "User files, code, configurations, and personal data",
+      "default_source": "/home",
+      "compress": false,
+      "excludes": [
+        ".cache/*",
+        "*/.cache/*",
+        "*.iso",
+        "Downloads/*",
+        ".local/share/Trash/*"
+      ]
+    },
+    "full_root_system": {
+      "description": "Full OS root partition (Must be executed with sudo)",
+      "default_source": "/",
+      "compress": false,
+      "excludes": [
+        "/proc/*",
+        "/sys/*",
+        "/dev/*",
+        "/run/*",
+        "/tmp/*",
+        "/mnt/*",
+        "/media/*",
+        "/lost+found",
+        "/var/tmp/*",
+        "/var/cache/apt/archives/*"
+      ]
+    },
+    "slow_wifi": {
+      "description": "Bandwidth-optimized profile for high-latency Wi-Fi networks",
+      "compress": true,
+      "safety_margin": 0.15,
+      "excludes": [
+        "*.mp4",
+        "*.mkv",
+        "*.zip",
+        "*.tar.gz"
+      ]
+    }
+  }
+}

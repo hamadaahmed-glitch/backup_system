@@ -1,0 +1,11 @@
+{
+  "desktop_host": "192.168.1.50",
+  "desktop_user": "backup-user",
+  "destination_root": "/srv/backups",
+  "ssh_port": 22,
+  "ssh_key": "~/.ssh/id_ed25519_backup",
+  "default_source": "/home",
+  "safety_margin": 0.10,
+  "compress": false,
+  "tui": false
+}

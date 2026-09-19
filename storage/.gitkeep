@@ -1,0 +1,4 @@
+# Keep this directory tracked in git while ignoring binary backup payloads.
+!metadata/
+!*.json
+!*.sql

@@ -1,0 +1,9 @@
+# =====================================================================
+# Linux Partition Backup System - Python Dependencies
+# =====================================================================
+
+# Core Application: Zero mandatory third-party packages required.
+# All detection, validation, parsing, and execution use standard library modules.
+
+# Optional: Interactive Terminal UI Dashboard (Layouts, Panels, Tables)
+rich>=13.5.0,<14.0.0
