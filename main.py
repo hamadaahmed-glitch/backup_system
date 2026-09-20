@@ -243,6 +243,8 @@ def run_sender_workflow(
         remote_client_dir = f"{dest_path.rstrip('/')}/{hostname}"
         remote_staging_dir = f"{remote_client_dir}/{backup_id}{PARTIAL_SUFFIX}"
         remote_final_dir = f"{remote_client_dir}/{backup_id}"
+        
+        ssh.run_command(f"mkdir -p {remote_staging_dir}") # <--- ADD THIS LINE HERE
 
         metadata = BackupMetadata.create_new(
             client_hostname=hostname,
